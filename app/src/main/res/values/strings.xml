@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Roommate Locator</string>
-    <string name="button">Click Me!</string>
+    <string name="new_home_button">New Home</string>
+    <string name="login_button">Login</string>
+    <string name="home_to_main">Back</string>
+    <string name="login_to_main">Back</string>
+    <string name="login">Login</string>
+    <string name="welcome_home">Welcome Home</string>
+    <string name="welcome_to_roomies">Welcome to ROOMiES!</string>
 </resources>

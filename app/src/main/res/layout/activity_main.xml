@@ -13,18 +13,34 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Sumukh!"
-        android:textSize="40dp"
+        android:text="@string/welcome_to_roomies"
+        android:textSize="30sp"
+        android:id="@+id/firstTextView"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="false"
-        android:id="@+id/firstTextView" />
+        android:layout_marginTop="33dp" />
 
     <Button
-        android:text="@string/button"
+        android:text="@string/new_home_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="53dp"
-        android:id="@+id/button" />
+        android:id="@+id/new_home_button"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="114dp"
+        android:layout_below="@+id/firstTextView"
+        android:layout_alignLeft="@+id/firstTextView"
+        android:layout_alignStart="@+id/firstTextView" />
+
+    <Button
+        android:text="@string/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_button"
+        android:layout_alignBaseline="@+id/new_home_button"
+        android:layout_alignBottom="@+id/new_home_button"
+        android:layout_toRightOf="@+id/new_home_button"
+        android:layout_toEndOf="@+id/new_home_button"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
 </RelativeLayout>
