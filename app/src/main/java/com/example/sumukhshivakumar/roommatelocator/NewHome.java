@@ -166,7 +166,7 @@ public class NewHome extends AppCompatActivity implements View.OnClickListener{
                 textViewPasswordStrengthIndiactor.setText("Strong");
 //                textViewPasswordStrengthIndiactor.setTextColor(YELLOW);
                 textViewPasswordGraphic.setBackgroundColor(GREEN);
-                textViewPasswordGraphic.setWidth(800);
+                textViewPasswordGraphic.setWidth(850);
                 textViewPasswordGraphic.setHeight(12);
 
             }
