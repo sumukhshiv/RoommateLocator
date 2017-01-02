@@ -5,6 +5,7 @@
     <string name="home_to_main">Back</string>
     <string name="login_to_main">Back</string>
     <string name="login">Login</string>
-    <string name="welcome_home">Welcome Home</string>
+    <string name="register_account">Register Account</string>
     <string name="welcome_to_roomies">Welcome to ROOMiES!</string>
+    <string name="already_registered_sign_in_here"><u>Already Registered? Sign in here</u></string>
 </resources>

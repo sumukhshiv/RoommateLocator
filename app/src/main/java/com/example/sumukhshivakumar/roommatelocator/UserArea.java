@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class UserArea extends AppCompatActivity {
-//This is the activity where users come when successfully logged in. 
+//This is the activity where users come when successfully logged in.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

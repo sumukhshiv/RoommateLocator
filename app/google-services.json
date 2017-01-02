@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "617599693864",
+    "firebase_url": "https://roomies-ac2c4.firebaseio.com",
+    "project_id": "roomies-ac2c4",
+    "storage_bucket": "roomies-ac2c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617599693864:android:99a1e2a4d165c036",
+        "android_client_info": {
+          "package_name": "com.example.sumukhshivakumar.roommatelocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617599693864-6bofu89k9v1uqel95kji5d1ps4kqvgpn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sumukhshivakumar.roommatelocator",
+            "certificate_hash": "1B12EB78F4B2B55714B404F17036C3F98D92F442"
+          }
+        },
+        {
+          "client_id": "617599693864-v53uihk5eo17abfvt3u15vqnfmmnsehn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdfxK9twn4ccwpu5XNnrj30owIsrbXAjM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617599693864-v53uihk5eo17abfvt3u15vqnfmmnsehn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
