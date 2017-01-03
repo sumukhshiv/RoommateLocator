@@ -8,4 +8,5 @@
     <string name="register_account">Register Account</string>
     <string name="welcome_to_roomies">Welcome to ROOMiES!</string>
     <string name="already_registered_sign_in_here"><u>Already Registered? Sign in here</u></string>
+    <string name="not_registered_sign_up_here"><u>Not registered? Sign Up here</u></string>
 </resources>

@@ -184,8 +184,11 @@ public class NewHome extends AppCompatActivity implements View.OnClickListener{
                 textViewPasswordStrengthIndiactor.setText("Password Max Length Reached");
                 textViewPasswordGraphic.setBackgroundColor(DKGRAY);
             }
-            if(s.length()>=20)
+            if(s.length()>=20) {
                 textViewPasswordStrengthIndiactor.setText("Password Max Length Exceeded");
+                textViewPasswordGraphic.setBackgroundColor(DKGRAY);
+            }
+
         }
     };
 
@@ -234,7 +237,10 @@ public class NewHome extends AppCompatActivity implements View.OnClickListener{
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (!task.isSuccessful()) {
-                            if (mAuth.signInWithEmailAndPassword(email, password) != null) {
+                            if (!email.contains("@")) {
+                                Toast.makeText(NewHome.this, "Please enter a valid Email Address", Toast.LENGTH_SHORT).show();
+                            }
+                             else if (mAuth.signInWithEmailAndPassword(email, password) != null) {
                                 Toast.makeText(NewHome.this, "An account with this email already exists.",
                                         Toast.LENGTH_SHORT).show();
                             } else {
@@ -243,8 +249,10 @@ public class NewHome extends AppCompatActivity implements View.OnClickListener{
                             }
                             progressDialog.dismiss();
                         } else if (task.isSuccessful()) {
-                            Toast.makeText(NewHome.this, "Registered Successfully!", Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
+                            Toast.makeText(NewHome.this, "Registered Successfully!", Toast.LENGTH_SHORT).show();
+                            finish();
+                            startActivity(new Intent(NewHome.this, UserArea.class));
                         }
 
 

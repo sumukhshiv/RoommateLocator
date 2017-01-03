@@ -18,6 +18,14 @@
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Registration"
+            android:textAlignment="center"
+            android:textSize="30dp"/>
+
         <EditText
             android:layout_margin="15dp"
             android:inputType="textEmailAddress"
@@ -37,7 +45,7 @@
         <TextView
             android:layout_marginLeft="19dp"
             android:layout_width="wrap_content"
-            android:layout_height="12px"
+            android:layout_height="24px"
             android:id="@+id/textViewPasswordGraphic"/>
         
         <TextView
