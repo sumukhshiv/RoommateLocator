@@ -7,14 +7,14 @@ package com.example.sumukhshivakumar.roommatelocator;
 public class UserInformation {
 
     public String name;
-    public String address;
+    public String userID;
 
     public UserInformation() {
 
     }
 
-    public UserInformation(String name, String address) {
+    public UserInformation(String name, String userID) {
         this.name = name;
-        this.address = address;
+        this.userID = userID;
     }
 }

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -56,13 +57,27 @@ public class UserArea extends AppCompatActivity implements View.OnClickListener 
     }
 
     private void saveUserInformation() {
-        
+        String name = editTextFullName.getText().toString().trim();
+        String address = editTextAddress.getText().toString().trim();
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+        String userID = user.getUid();
+
+        UserInformation userInformation = new UserInformation(name, userID);
+
+        databaseReference.child(address).setValue(userInformation);
+
+        Toast.makeText(this, "Information Updated...", Toast.LENGTH_LONG).show();
+
     }
 
     @Override
     public void onClick(View view) {
         if (view == buttonLogout) {
             startActivity(new Intent(UserArea.this, Login.class));
+        }
+
+        else if (view == buttonSave) {
+            saveUserInformation();
         }
 
     }
